@@ -1,0 +1,89 @@
+.vk-alert {
+  transition: opacity 0.4s ease;
+  background-color: pink;
+  --vk-alert-padding: 8px 16px;
+  --vk-alert-border-radius-base: var(--vk-border-radius-base);
+  --vk-alert-title-font-size: 14px;
+  --vk-alert-title-with-description-font-size: 16px;
+  --vk-alert-description-font-size: 14px;
+  --vk-alert-close-font-size: 16px;
+  --vk-alert-close-customed-font-size: 14px;
+  --vk-alert-icon-size: 16px;
+  --vk-alert-icon-large-size: 28px;
+  align-items: center;
+  /* background-color: var(--vk-color-white); */
+  border-radius: var(--vk-alert-border-radius-base);
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: var(--vk-alert-padding);
+  position: relative;
+  transition: opacity var(--vk-transition-duration-fast);
+  width: 100%;
+}
+
+.vk-alert .vk-alert__close-btn {
+  cursor: pointer;
+  font-size: var(--vk-alert-close-font-size);
+  opacity: 1;
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+
+.vk-alert.is-dark .vk-alert__close-btn,
+.vk-alert.is-dark .vk-alert__description {
+  color: var(--vk-color-white);
+}
+
+.vk-alert .vk-alert__close-btn {
+  color: var(--vk-color-info-light-5);
+}
+
+/* 展开 Sass @each 循环：primary/success/warning/info/danger 五个状态 */
+.vk-alert--primary {
+  background-color: var(--vk-color-primary-light-9);
+  color: var(--vk-color-primary);
+}
+.vk-alert--primary.is-dark {
+  background: var(--vk-color-primary);
+  color: var(--vk-color-white);
+}
+
+.vk-alert--success {
+  background-color: var(--vk-color-success-light-9);
+  color: var(--vk-color-success);
+}
+.vk-alert--success.is-dark {
+  background: var(--vk-color-success);
+  color: var(--vk-color-white);
+}
+
+.vk-alert--warning {
+  background-color: var(--vk-color-warning-light-9);
+  color: var(--vk-color-warning);
+}
+.vk-alert--warning.is-dark {
+  background: var(--vk-color-warning);
+  color: var(--vk-color-white);
+}
+
+.vk-alert--info {
+  background-color: var(--vk-color-info-light-9);
+  color: var(--vk-color-info);
+}
+.vk-alert--info.is-dark {
+  background: var(--vk-color-info);
+  color: var(--vk-color-white);
+}
+
+.vk-alert--danger {
+  background-color: var(--vk-color-danger-light-9);
+  color: var(--vk-color-danger);
+}
+.vk-alert--danger.is-dark {
+  background: var(--vk-color-danger);
+  color: var(--vk-color-white);
+}
