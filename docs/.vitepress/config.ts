@@ -16,6 +16,7 @@ export default defineConfig({
     plugins: [
       VueMacros.vite({
         setupComponent: false,
+        
         setupSFC: false,
         plugins: {
           vueJsx: vueJsx(),
