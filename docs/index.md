@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /markdown-examples
-    - theme: alt
-      text: 作者简介
       link: /api-examples
+    - theme: alt
+      text: 组件
+      link: /components/button
 
 features:
   - title: Vue3 组件库
