@@ -11,7 +11,7 @@ import type { NameType, CollapseProps, CollapseEmits } from './types'
 import { collapseContextKey } from './types'
 // 给组件进行命名
 defineOptions({
-  name: "VKCollapes"
+  name: "VLCollapes"
 })
 
 const props = defineProps<CollapseProps>()

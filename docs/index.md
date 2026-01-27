@@ -3,23 +3,24 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "VL Element 组件库"
+  text: "进阶必学"
+  tagline: 最新 Vue3.3 + TS4 高仿 ElementPlus 打造自己的组件库
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 开始使用
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 作者简介
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Vue3 组件库
+    details: 基于 Vue3 和 TypeScript 开发
+  - title: 学习
+    details: 面向设计师和开发者的组件库
+  - title: 成为赞助商
+    details: 请通过此邮箱联系我们`hcf@qq.com
+    #  难度逐渐上升，高薪必备敲门砖，包括：Message - Select - Form 这种高难度高复杂组件。
 ---
 

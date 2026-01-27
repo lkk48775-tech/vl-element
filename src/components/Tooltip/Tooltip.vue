@@ -34,7 +34,7 @@ import type { TooltipProps, TooltipEmits, TooltipInstance } from './types'
 // 引入方法用于实现点击其他空白区域可以关闭浮层
 import useClickOutside from '../../hooks/useClickOutside'
 defineOptions({
-  name: 'VkTooltip'
+  name: 'VLTooltip'
 })
 const props = withDefaults(defineProps<TooltipProps>(), {
   placement: 'bottom',

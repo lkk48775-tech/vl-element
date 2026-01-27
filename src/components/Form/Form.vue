@@ -10,7 +10,7 @@ import type { FormProps, FormItemContext, FormContext, FormValidateFailure, Form
 import { formContextKey } from './types'
 const props = defineProps<FormProps>()
 defineOptions({
-  name: 'VkForm'
+  name: 'VLForm'
 })
 
 const fields: FormItemContext[] = []

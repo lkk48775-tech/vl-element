@@ -17,7 +17,7 @@ import './styles/index.css'
 
 library.add(fas)
 
-const components = [ 
+const components = [
   Button,
   Collapse,
   CollapseItem,
@@ -34,12 +34,12 @@ const components = [
 
 const install = (app: App) => {
   components.forEach(compoment => {
-    app.component(compoment.name, compoment)
+    app.component(compoment.name!, compoment)
   })
 }
 
-export { 
-  install, 
+export {
+  install,
   Button,
   Collapse,
   CollapseItem,

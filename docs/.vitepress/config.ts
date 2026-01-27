@@ -4,9 +4,11 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueMacros from 'unplugin-vue-macros'
 import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
 // https://vitepress.dev/reference/site-config
+
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "VL Element",
   description: "A VitePress Site",
+
   vite: {
     plugins: [
       VueMacros.vite({
@@ -30,32 +32,55 @@ export default defineConfig({
     }
   },
   themeConfig: {
+    prevNextLinks: true,
+    lastUpdated: true,
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Test', link: '/markdown-examples' }
+      { text: '开始使用', link: '/components/button' },
+      { text: '组件', link: '/markdown-examples' },
+      { text: '寄语', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'Test here', link: '/api-examples' }
+        text: 'Basic 基础组件库',
+        items:[
+          { text: 'Button  按钮', link: '/components/button' }
         ]
       },
       {
-        text: 'Basic',
+        text: 'Form 表单组件库',
         items: [
-          {text: 'Button', link: '/components/button' }
+          { text: 'Input 输入框', link: '/components/Input' },
+          { text: 'Select 选择器', link: '/components/Select' },
+          { text: 'Switch 开关', link: '/components/Switch' },
+          { text: 'Form 表单', link: '/components/Form' }
+        ]
+      },
+      {
+        text: 'Data 数据展示',
+        items: [
+          { text: 'Collapse 折叠面板', link: '/components/Collapse' },
+        ]
+      },
+      {
+        text: 'Navigation 导航',
+        items: [
+          { text: 'Dropdown 下拉菜单 ', link: '/components/Dropdown' },
+        ]
+      },
+      {
+        text: 'Feedback  导航',
+        items: [
+          { text: 'Alert 提示', link: '/components/Alert' },
+          { text: 'Message 消息提示', link: '/components/Message' },
+          { text: 'Tooltip 文字提示', link: '/components/Tooltip' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon:'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
 })

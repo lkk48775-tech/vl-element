@@ -5,7 +5,7 @@
 ### 安装
 
 
-```bash
+```bash  
 npm i @vikingmute/v-element --save
 ```
 

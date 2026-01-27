@@ -12,7 +12,7 @@ import { inject } from 'vue'
   import { AlertContextKey } from './types'
   import Icon from '../Icon/Icon.vue'
   defineOptions({
-  name: "VKAlert"
+  name: "VLAlertTitle"
 })
 defineProps<AlertProps1>()
 const AlertContext = inject(AlertContextKey)// 获取对应钥匙中的数据

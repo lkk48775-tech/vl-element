@@ -1,14 +1,20 @@
 ---
 title: Select | V-Element
 description: Select 组件的文档
+prev:
+  text: 'Input 输入框'
+  link: '/guide/Input'
+next:
+  text: 'Switch 输入框'
+  link: '/components/Switch'
 ---
-## 选择器
+# Select 选择器
 
 当选项过多时，使用下拉菜单展示并选择内容。
 
-#### 基础用法
+## 基础用法
 
-适用广泛的基础单选 v-model 的值为当前被选中的 option 的 value 属性值。
+适用广泛的基础单选` v-model` 的值为当前被选中的 `option` 的 `value` 属性值。
 
 <preview path="../demo/Select/Basic.vue" title="基础选择器" description="Select 基础选择器"></preview>
 
@@ -41,3 +47,37 @@ description: Select 组件的文档
 服务器搜索数据，输入关键字进行查找。为了启用远程搜索，需要将 `filterable` 和 `remote` 设置为true，同时传入一个`remote-method`。 remote-method 为一个返回 Promise 的Function，类型为 `(value: string) => Promise<SelectOption[]>` 。
 
 <preview path="../demo/Select/Remote.vue" title="筛选选项" description="Select 筛选选项"></preview>
+
+
+# API
+
+### 属性
+
+| 属性名 | 说明 | 类型 | 默认值 |
+|--------|------|------|--------|
+| model-value / v-model | 选中项绑定值 | `string` | - |
+| disabled | 是否禁用 | `boolean` | `false` |
+| options | 下拉框选项 | `SelectOption[]` | `[]` |
+| placeholder | 占位符 | `string` | - |
+| clearable | 是否可以清空选项 | `boolean` | `false` |
+| renderLabel | 自定义选项模板 | `(option: SelectOption) => VNode` | - |
+| filterable | Select 组件是否可筛选 | `boolean` | `false` |
+| filterMethod | 自定义筛选方法 | `(value: string) => SelectOption[]` | - |
+| remote | 选项是否从服务器远程加载 | `boolean` | `false` |
+| remoteMethod | 自定义远程搜索方法 | `(value: string) => Promise<SelectOption[]>` | - |
+
+### 事件
+
+| 事件名 | 描述 | 类型 |
+|--------|------|------|
+| change | 选中值发生变化时触发 | `(value: string) => void` |
+| visible-change | 下拉框出现/隐藏时触发 | `(value: boolean) => void` |
+| clear | 点击 clearable 属性生成的清空按钮时触发 | `() => void` |
+
+### SelectOption 类型定义
+
+| 属性名 | 说明 | 类型 | 默认值 |
+|--------|------|------|--------|
+| label | 选项显示的文字 | `string` | - |
+| value | 选项的值 | `string` | - |
+| disabled | 是否禁用 | `boolean` | `false` |

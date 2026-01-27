@@ -29,7 +29,7 @@ import { collapseContextKey } from './types'
 import Icon from '../Icon/Icon.vue'
 // 给组件设置名字
 defineOptions({
-  name: 'VkCollapseItem'
+  name: 'VLCollapseItem'
 })
 const props = defineProps<CollapseItemProps>()//进行限制类型,然后获取父组件进行传递的数据
 const collapseContext = inject(collapseContextKey)// 获取对应钥匙中的数据
@@ -73,7 +73,7 @@ const transitionEvents: Record<string, (el: HTMLElement) => void> = {
 }
 </script>
 <style scoped>
-.vk-collapse-item__header {
-  font-size: 30px;
+.vk-collapse-item__header .header-angle {
+  font-size: 25px;
 }
 </style>

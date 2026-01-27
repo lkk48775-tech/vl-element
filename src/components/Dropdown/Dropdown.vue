@@ -47,7 +47,7 @@ import type { TooltipInstance } from '../Tooltip/types'
 
 // 重新命名组件
 defineOptions({
-  name: "VKDropdown"
+  name: "VLDropdown"
 })
 //对组件可以接收的类型进行约束
 const props = withDefaults(defineProps<DropdownProps>(), {

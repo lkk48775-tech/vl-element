@@ -28,7 +28,7 @@ import { isNil } from 'lodash-es'
 import { formContextKey, formItemContextKey } from './types'
 import type { FormItemProps, FormValidateFailure, FormItemContext, ValidateStatusProp, FormItemInstance } from './types'
 defineOptions({
-  name: 'VkFormItem'
+  name: 'VLFormItem'
 })
 const props = defineProps<FormItemProps>()
 

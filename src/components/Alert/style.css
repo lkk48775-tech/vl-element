@@ -1,4 +1,5 @@
 .vk-alert {
+margin: 15px 0!important;
   transition: opacity 0.4s ease;
   background-color: pink;
   --vk-alert-padding: 8px 16px;
@@ -22,6 +23,9 @@
   position: relative;
   transition: opacity var(--vk-transition-duration-fast);
   width: 100%;
+  .vk-alert__content {
+    margin:2px 0!important;
+  }
 }
 
 .vk-alert .vk-alert__close-btn {
@@ -31,6 +35,7 @@
   position: absolute;
   right: 16px;
   top: 12px;
+
 }
 
 .vk-alert.is-dark .vk-alert__close-btn,

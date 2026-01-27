@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import type { IconProps } from '@/components/Icon/types'
 
 defineOptions({
-  name: 'VKIcon',
+  name: 'VLIcon',
   inheritAttrs: false//设置成不可透传（也就时父组件传递的数据不挂载在根元素上）
 })
 // 约束从父组件传递过来的数据

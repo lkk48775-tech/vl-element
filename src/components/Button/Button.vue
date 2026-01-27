@@ -31,7 +31,7 @@ import Icon from '../Icon/Icon.vue'
 //重新定义组件的名字
 
 defineOptions({
-  name: 'VkButton'
+  name: 'VLButton'
 })
 
 

@@ -3,7 +3,7 @@
     <div v-if="isShow" class="vk-alert" :class="{ [`vk-alert--${type}`]: type, [`is-${effect}`]: effect }">
       <div class="vk-alert__content">
         <AlertTitle :closable="closable">
-          {{ content }}
+          {{ content ? content : ''}} <slot></slot>
         </AlertTitle>
       </div>
     </div>
@@ -16,7 +16,7 @@ import { AlertContextKey } from './types'
 import AlertTitle from './AlertTitle.vue';
  withDefaults(defineProps<AlertProps>(),{closable:true})
 defineOptions({
-  name:"VKAlert"
+  name:"VLAlert"
 })
  const isShow=ref(true)
 function remove(){

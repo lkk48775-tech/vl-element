@@ -85,7 +85,7 @@ const findOption = (value: string) => {
   return option ? option : null
 }
 defineOptions({
-  name: 'VkSelect'
+  name: 'VLSelect'
 })
 const props = withDefaults(defineProps<SelectProps>(), {
   // 因为将这个属性设置成了可选选项，然后为了防止下面使用这个属性报错，所以提前进行设计了一个默认值

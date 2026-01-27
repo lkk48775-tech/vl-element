@@ -34,7 +34,7 @@ import { ref, computed, onMounted, watch } from 'vue'
 import type { SwtichProps, SwtichEmits } from './types'
 
 defineOptions({
-  name: 'VkSwtich',
+  name: 'VLSwtich',
   inheritAttrs: false//继承属性关闭
 })
 const props = withDefaults(defineProps<SwtichProps>(), {

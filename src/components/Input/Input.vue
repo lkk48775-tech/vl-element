@@ -101,7 +101,7 @@ import Icon from '../Icon/Icon.vue'
 import { formItemContextKey} from '../Form/types'
 
 defineOptions({
-  name: 'VkInput',
+  name: 'VLInput',
   // 禁止 Vue 自动把父组件传递的、未被组件 props 声明的属性（比如 id/ class/ placeholder 等）挂载到组件的根元素上。
   inheritAttrs: false
 })
@@ -112,7 +112,7 @@ const innerValue = ref(props.modelValue)// 响应式数据记录表单的值
 const isFocus = ref(false)//用户是否选用清空图标
 const passwordVisible = ref(false)//用于判断是显示密码图标还是不显示密码的图标
 const inputRef = ref() as Ref<HTMLInputElement>
-const formItemContext = inject(formItemContextKey)//通过钥匙拿到对应的方法(也就是验证方法)
+const formItemContext = inject(formItemContextKey,null)//通过钥匙拿到对应的方法(也就是验证方法)
 // 根据传递的trigger不同进行选择进行什么样的验证
 // （ 如果传递的是rules则在每次表单失去焦点时调用这个方法）
 const runValidation = (trigger?: string) => {
