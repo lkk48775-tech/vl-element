@@ -34,7 +34,7 @@ createApp(App).use(VLElement).mount('#app')
 ```ts
 // main.ts
 // 引入样式
-import 'v3-element/dist/index.css'
+import 'vl-element/dist/index.css'
 ```
 ```ts
 <template>
