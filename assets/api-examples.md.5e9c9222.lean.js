@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as l,N as n}from"./chunks/framework.f5088bf5.js";const d=JSON.parse('{"title":"快速上手","description":"","frontmatter":{},"headers":[],"relativePath":"api-examples.md"}'),o={name:"api-examples.md"},t=n("",13),p=[t];function e(c,r,i,D,y,F){return a(),l("div",null,p)}const A=s(o,[["render",e]]);export{d as __pageData,A as default};
