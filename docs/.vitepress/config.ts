@@ -9,6 +9,9 @@ export default defineConfig({
   title: "VL Element",
   description: "A VitePress Site",
 
+    // 仓库名作为基础路径
+    base: '/vl-element/',
+    // 其他配置...
   vite: {
     plugins: [
       VueMacros.vite({
@@ -36,9 +39,9 @@ export default defineConfig({
     lastUpdated: true,
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '开始使用', link: '/components/button' },
-      { text: '组件', link: '/markdown-examples' },
-      { text: '寄语', link: '/markdown-examples' }
+      { text: '开始使用', link: '/api-examples' },
+      { text: '组件', link: '/components/button' },
+      { text: '源码获取', link: '/markdown-examples' }
     ],
 
     sidebar: [

@@ -23,9 +23,6 @@ h1, h2, h3, h4, h5, h6, p {
   .container{
     margin-top: 10px;
     margin-bottom: 10px;
-    .container-body {
-
-    }
   }
 }
 }
@@ -34,6 +31,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 30px!important;
 
 }
+
+
 
 
 
