@@ -55,10 +55,10 @@ export default defineConfig({
       {
         text: 'Form 表单组件库',
         items: [
-          { text: 'Input 输入框', link: '/components/Input' },
-          { text: 'Select 选择器', link: '/components/Select' },
-          { text: 'Switch 开关', link: '/components/Switch' },
-          { text: 'Form 表单', link: '/components/Form' }
+          { text: 'Input 输入框', link: '/components/input' },
+          { text: 'Select 选择器', link: '/components/select' },
+          { text: 'Switch 开关', link: '/components/switch' },
+          { text: 'Form 表单', link: '/components/form' }
         ]
       },
       {
