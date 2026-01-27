@@ -1,0 +1,24 @@
+# .github/workflows/deploy-docs.yml
+name: Deploy Docs
+on:
+  push:
+    branches: [main] # 你的主分支名称
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # 匹配你的本地 Node 版本
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build Docs
+        run: npm run docs:build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/.vitepress/dist
