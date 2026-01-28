@@ -2,7 +2,7 @@
   <span class="el-alert__title">
     <slot></slot>
   </span>
-  <Icon @click="removeClick" size="sm" :closable="closable"   class="vk-alert__close-btn" icon="xmark" ></Icon>
+  <Icon @click="removeClick" size="sm" v-if="closable"   class="vk-alert__close-btn" icon="xmark" ></Icon>
 </template>
 <script setup lang="ts">
   import type { AlertProps1 } from './types'
@@ -14,11 +14,12 @@ import { inject } from 'vue'
   defineOptions({
   name: "VLAlertTitle"
 })
-defineProps<AlertProps1>()
+const props=defineProps<AlertProps1>()
 const AlertContext = inject(AlertContextKey)// 获取对应钥匙中的数据
 
 function removeClick(){
-  AlertContext?.remove()
-  console.log(21);
-}
+  if(props.closable){
+    AlertContext?.remove()
+    console.log(21);
+  }
 </script>
