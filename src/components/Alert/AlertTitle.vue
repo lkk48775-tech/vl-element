@@ -21,4 +21,5 @@ function removeClick(){
     AlertContext?.remove()
     console.log(21);
   }
+}
 </script>
