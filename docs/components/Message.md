@@ -20,7 +20,7 @@
 
 ## 单独引用
 ```ts
-import { createMessage } from 'v3-element';
+import { createMessage } from 'vl-element';
 ```
 
 ## Message 消息提示
