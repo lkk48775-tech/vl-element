@@ -16,7 +16,6 @@ import { inject } from 'vue'
 })
 const props=defineProps<AlertProps1>()
 const AlertContext = inject(AlertContextKey)// 获取对应钥匙中的数据
-
 function removeClick(){
   if(props.closable){
     AlertContext?.remove()
