@@ -20,7 +20,7 @@ features:
   - title: 学习
     details: 面向设计师和开发者的组件库
   - title: 成为赞助商
-    details: 请通过此邮箱联系我们`hcf@qq.com
+    details: 请通过此邮箱联系我们3865151679@qq.com
     #  难度逐渐上升，高薪必备敲门砖，包括：Message - Select - Form 这种高难度高复杂组件。
 ---
 
